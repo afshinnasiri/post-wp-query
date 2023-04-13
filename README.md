@@ -84,7 +84,7 @@ some common parameters you can use:
     "post_status" => "publish", 
     "no_found_rows" => 1, 
     "ignore_sticky_posts" => 1 
-));
+);
 ?>
 ```
 
@@ -128,7 +128,7 @@ we use meta_key in this code and the value is views ( we installed https://wordp
     "cat" => 10, // Your custom category id
     "order" => "DESC",
     "posts_per_page" => 10, 
-));
+);
 $mycustom_query = new WP_Query( $args );
 
 // The Loop
