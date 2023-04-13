@@ -53,14 +53,14 @@ $args = array(
 ```
 some common parameters you can use:
 
-*Posts_per_page – number of posts that you want to display.
-*Author – narrows down the results by one or more authors.
-*Cat – specifies the posts category id that you want to show.
-*Tag – specifies the posts tag that you want to show.
-*Orderby – sorts results by author, post type, date, etc.
-*Order – sorts results in ascending or descending order.
-*Post_type – show posts, pages for custom post types.
-*Post_status – specifies if posts are in-progress, scheduled, published, or deleted.
+- Posts_per_page – number of posts that you want to display.
+- Author – narrows down the results by one or more authors.
+- Cat – specifies the posts category id that you want to show.
+- Tag – specifies the posts tag that you want to show.
+- Orderby – sorts results by author, post type, date, etc.
+- Order – sorts results in ascending or descending order.
+- Post_type – show posts, pages for custom post types.
+- Post_status – specifies if posts are in-progress, scheduled, published, or deleted.
 
 ### Create arguments:
 ```
