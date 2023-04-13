@@ -88,10 +88,16 @@ Post_status – specifies if posts are in-progress, scheduled, published, or del
 ?>
 ```
 
+# Example 3: Show last most comment posts & specific category
 ```
 <?php
-$args = array( 'posts_per_page' => 3 );
-// the query
+$args = array(
+    "orderby" => "comment_count", 
+    "order" => "DESC", 
+    "cat" => 10, // Your custom category id
+    "posts_per_page" => 10, 
+    "post_status" => "publish", 
+));
 $mycustom_query = new WP_Query( $args );
 ?>
 <?php if ( $mycustom_query->have_posts() ) : ?>
