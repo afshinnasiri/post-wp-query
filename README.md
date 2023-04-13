@@ -44,6 +44,50 @@ wp_reset_postdata();
  # Example 2: Show 3 last posts via argument
  
  You can use argument($args) to customize query:
+``` 
+$args = array(
+    'one' => 'value',
+    'two' => 'value',
+    'three' => 'value'
+);
+```
+some common parameters you can use:
+
+Posts_per_page – number of posts that you want to display.
+Author – narrows down the results by one or more authors.
+Cat – specifies the posts category id that you want to show.
+Tag – specifies the posts tag that you want to show.
+Orderby – sorts results by author, post type, date, etc.
+Order – sorts results in ascending or descending order.
+Post_type – show posts, pages for custom post types.
+Post_status – specifies if posts are in-progress, scheduled, published, or deleted.
+
+### Create arguments:
+```
+<?php  
+   $args = array(
+      "category_name" => "sports", // category name
+      "orderby" => "comment_count", // sort post with most comment 
+      "posts_per_page" => 5, // number of posts that you want to display
+   );
+   $mycustom_query = new WP_Query($args);
+?>
+```
+### Create arguments with specific category id:
+```
+<?php
+  $args = array(
+    "orderby" => "comment_count", 
+    "order" => "DESC", 
+    "cat" => 10, // Your custom category id
+    "posts_per_page" => 10, 
+    "post_status" => "publish", 
+    "no_found_rows" => 1, 
+    "ignore_sticky_posts" => 1 
+));
+?>
+```
+
 ```
 <?php
 $args = array( 'posts_per_page' => 3 );
