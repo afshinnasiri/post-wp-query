@@ -3,7 +3,7 @@ Using WP_Query, you can customize the display of your posts and pages, So it can
 you can leverage queries to fetch specific information from your database with WP_Query. 
 
 
-# Usage
+# Introduction
 First of all, you should use WP_Query codes instead wordpress standard post loop.
 The basic post loop in themes can be like:
 ```
@@ -21,4 +21,6 @@ endif;
 ```
  First, the function have_posts() will check to see if there are posts on your site ,after that the while condition continues the loop for every post.Using else is for you don't have posts on your website.
  
+ 
+ # Example 1: Show posts via WP_Query
  
