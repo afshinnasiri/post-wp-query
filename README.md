@@ -142,7 +142,7 @@ if ( $mycustom_query->have_posts() ) {
 } else {
      echo "<p class='no-posts'>" . __( "Sorry, there are no posts." ) . "</p>";
 }
-/* Restore original Post Data */
+/* reset */
 wp_reset_postdata();
 ?>
 ```
